@@ -1,8 +1,7 @@
 import sqlite3
-from tkinter import INSERT
 miConexion = sqlite3.connect("Proyecto")
 micursor= miConexion.cursor()
-#UNIQUE
+#UNIQUE no se repite informacion
 #micursor.execute('''CREATE TABLE PRODUCTOS(ID INTEGER PRIMARY KEY AUTOINCREMENT,NOMBRE VARCHAR(20), PRECIO INTEGER(15))''')
 micursor.execute("UPDATE PRODUCTOS SET PRECIO=45 WHERE NOMBRE ='Lentejas'")
 #productos=[
